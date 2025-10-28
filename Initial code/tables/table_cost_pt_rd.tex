@@ -1,0 +1,41 @@
+\begin{table}
+\centering
+\caption{Cost Pass-through Regression Results - Royal Decree Included} \label{tab:cost_pt_rd}
+
+\begin{tabular*}{.9\textwidth}{@{\extracolsep{\fill}} l  c  c  c  c  c }
+\hline\hline 
+ & \textbf{(1)}  & \textbf{(2)}  & \textbf{(3)}  & \textbf{(4)}  & \textbf{(5)} \\ \cline{2-6} \\[-\sep]
+Mg. Emissions Costs $(\rho)$  & 0.614 & 0.722 & 0.600 & 0.708 & 0.706 \\ 
+ & (0.088) & (0.089) & (0.085) & (0.085) & (0.085) \\[\sep] \hline \\[-\sep]
+Temperature  & -0.105 & & -0.082 & & \\ 
+ & (0.046) & & (0.043) & & \\[\sep] 
+Maximum Temperature  & -0.019 & & -0.042 & & \\ 
+ & (0.039) & & (0.037) & & \\[\sep] 
+Wind Speed  & -2.738 & -2.302 & -2.789 & -2.349 & -2.365 \\ 
+ & (0.221) & (0.219) & (0.209) & (0.205) & (0.201) \\[\sep] 
+Wind Speed Squared & 0.103 & 0.080 & 0.105 & 0.083 & 0.083 \\ 
+ & (0.015) & (0.014) & (0.014) & (0.013) & (0.013) \\[\sep] 
+Coal  & 43.133 & 33.938 & 42.823 & 33.521 \\ 
+ & (3.199) & (3.385) & (3.061) & (3.204) \\[\sep] 
+Gas  & 3.794 & 2.489 & 3.783 & 2.491 \\ 
+ & (0.265) & (0.259) & (0.255) & (0.248) \\[\sep] 
+Brent  & -1.026 & -1.879 & -1.005 & -1.859 \\ 
+ & (0.610) & (0.637) & (0.579) & (0.604) \\[\sep]\hline\\[-\sep]
+ F-test 
+ & 518.8  & 507.1  & 533.0  & 521.4  & 515.2  \\[\sep]\hline\\[-\sep]
+MonthXTemp,MaxTemp     & N & Y & N & Y & Y  \\
+MonthXHour FE          & N & N & Y & Y & Y  \\
+HourXInput                     & N & N & N & N & Y  \\[\sep]
+\hline\hline 
+\end{tabular*}
+\begin{minipage}[c]{.9\textwidth}
+{\footnotesize 
+\noindent
+Notes: Sample from January 2004 to June 2007, includes all thermal units in the Spanish electricity market. 
+All specifications include month of sample, weekday, and hour fixed effects, as well as weather and demand controls 
+(temperature, maximum temperature, humidity), 
+ supply controls (wind speed and wind speed squared); and common controls (commodity prices of 
+coal, gas, and oil). The marginal emissions cost is instrumented with the emissions price. 
+Robust standard errors in parentheses. Number of observations: $ 26,050$.}
+\end{minipage}
+\end{table}

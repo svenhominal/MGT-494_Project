@@ -1,0 +1,40 @@
+\begin{table}
+\centering
+\caption{Test based on structural equations} \label{tab:intern_structural}
+
+\begin{tabular*}{.9\textwidth}{@{\extracolsep{\fill}} l  c  c  c  c  c }
+\\ \hline\hline 
+ & \textbf{All}  & \textbf{Firm 1}  & \textbf{Firm 2}  & \textbf{Firm 3}  & \textbf{Firm 4} \\ \cline{2-6} \\[-\sep]
+\textbf{Emissions cost} ($\gamma$) \\[\sep]
+(1) No FE & 0.939 & 0.925 & 0.998 & 1.117 & 0.806 \\ 
+ & (0.070) & (0.039) & (0.032) & (0.039) & (0.073)\\[\sep]
+(2) Unit FE & 0.971 & 0.947 & 0.963 & 1.062 & 0.803 \\ 
+ & (0.034) & (0.031) & (0.039) & (0.046) & (0.102)\\[\sep]
+(3) Unit FE + Season & 0.957 & 0.959 & 0.963 & 1.008 & 0.784 \\ 
+ & (0.034) & (0.028) & (0.027) & (0.053) & (0.085)\\[\sep]
+(4) Spec.3 + Markup (IV) & 0.959 & 1.036 & 0.962 & 1.013 & 0.834 \\ 
+ & (0.062) & (0.058) & (0.024) & (0.197) & (0.101)\\[\sep]
+ \hline \\[-\sep]
+\textbf{Input cost} ($\beta$) \\[\sep]
+(1) No FE & 0.812 & 0.476 & 0.892 & 0.952 & 1.037 \\ 
+ & (0.047) & (0.029) & (0.021) & (0.021) & (0.014)\\[\sep]
+(2) Unit FE & 0.598 & 0.494 & 0.303 & 0.821 & 0.643 \\ 
+ & (0.064) & (0.057) & (0.055) & (0.037) & (0.053)\\[\sep]
+(3) Unit FE + Season & 0.601 & 0.497 & 0.348 & 0.769 & 0.640 \\ 
+ & (0.058) & (0.047) & (0.039) & (0.043) & (0.027)\\[\sep]
+(4) Spec.3 + Markup (IV) & 0.604 & 0.487 & 0.335 & 0.773 & 0.683 \\ 
+ & (0.069) & (0.038) & (0.060) & (0.172) & (0.114)\\[\sep]
+ \hline \\[-\sep]
+\textbf{Markup} ($\theta$) \\[\sep]
+(4) Spec.3 + Markup (IV) & 0.973 & 0.515 & 1.037 & 0.934 & -1.086 \\ 
+ & (0.398) & (0.227) & (0.177) & (2.411) & (6.117)\\[\sep]
+ \hline \\[-\sep]
+Obs. &        9,257 &        3,029 &        1,988 &        2,805 &        1,435 \\[\sep] \hline \hline  \vspace{-18pt}
+\end{tabular*}
+\begin{minipage}[c]{.9\textwidth}
+{\footnotesize \vspace{6pt}
+\noindent
+Notes: Sample from January 2004 to February 2006, includes all thermal units in the Spanish electricity market. 
+Standard errors clustered at the unit level.}
+\end{minipage}
+\end{table}

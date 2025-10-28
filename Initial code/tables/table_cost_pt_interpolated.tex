@@ -1,0 +1,29 @@
+\begin{table}
+\centering
+\caption{Cost Pass-through Regression Results for different Emissions Assumptions} \label{tab:cost_pt_interpolated}
+
+\begin{tabular*}{.9\textwidth}{@{\extracolsep{\fill}} l  c  c  c  c  c }
+\hline\hline 
+ & \textbf{(1)}  & \textbf{(2)}  & \textbf{(3)}  & \textbf{(4)}  & \textbf{(5)} \\ \cline{2-6} \\[-\sep]
+Interpolated Emissions Costs  & 0.894 & 0.917 & 0.894 & 0.917 & 0.917 \\ 
+\qquad Obs. =  18,744  & (0.181) & (0.184) & (0.163) & (0.164) & (0.156) \\[\sep] 
+Mg. Emissions Costs \\ (Units \& Technologies)  & 0.862 & 0.860 & 0.835 & 0.829 & 0.848 \\ 
+\qquad Obs. =  16,186  & (0.181) & (0.182) & (0.173) & (0.172) & (0.168) \\[\sep] 
+Mg. Emissions Costs \\ (Units Only)  & 0.861 & 0.806 & 0.901 & 0.799 & 0.802 \\ 
+\qquad Obs. =  14,928  & (0.178) & (0.176) & (0.067) & (0.172) & (0.167) \\[\sep]\hline\\[-\sep]
+MonthXTemp,MaxTemp     & N & Y & N & Y & Y  \\
+MonthXHour FE          & N & N & Y & Y & Y  \\
+HourXInput                     & N & N & N & N & Y  \\[\sep]
+\hline\hline 
+\end{tabular*}
+\begin{minipage}[c]{.9\textwidth}
+{\footnotesize 
+\noindent
+Notes: Sample from January 2004 to February 2006, includes all thermal units in the Spanish electricity market. 
+All specifications include month of sample, weekday, and hour fixed effects, as well as weather and demand controls 
+(temperature, maximum temperature, humidity), 
+ supply controls (wind speed and wind speed squared); and common controls (commodity prices of 
+coal, gas, and oil). The marginal emissions cost is instrumented with the emissions price. 
+Robust standard errors in parentheses.}
+\end{minipage}
+\end{table}

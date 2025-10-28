@@ -1,0 +1,28 @@
+\begin{table}
+\centering
+\caption{Cost Pass-through Regression Results: Peak vs. Non-Peak} \label{tab:cost_pt_peak}
+
+\begin{tabular*}{.9\textwidth}{@{\extracolsep{\fill}} l  c  c  c  c  c }
+\hline\hline 
+ & \textbf{(1)}  & \textbf{(2)}  & \textbf{(3)}  & \textbf{(4)}  & \textbf{(5)} \\ \cline{2-6} \\[-\sep]
+Mg. Emissions Costs - Peak  & 1.085 & 1.083 & 1.055 & 1.051 & 1.107 \\ 
+ & (0.185) & (0.185) & (0.178) & (0.177) & (0.175) \\[\sep] 
+Mg. Emissions Costs - Off Peak  & 0.635 & 0.633 & 0.608 & 0.603 & 0.496 \\ 
+ & (0.170) & (0.170) & (0.164) & (0.163) & (0.164) \\[\sep]\hline\\[-\sep]
+MonthXTemp,MaxTemp     & N & Y & N & Y & Y  \\
+MonthXHour FE          & N & N & Y & Y & Y  \\
+HourXInput                     & N & N & N & N & Y  \\[\sep]
+\hline\hline 
+\end{tabular*}
+\begin{minipage}[c]{.9\textwidth}
+{\footnotesize 
+\noindent
+Notes: Sample from January 2004 to February 2006, includes all thermal units in the Spanish electricity market. 
+Only peak hours are included (between 8am and 8pm). 
+All specifications include month of sample, weekday, and hour fixed effects, as well as weather and demand controls 
+(temperature, maximum temperature, humidity), 
+ supply controls (wind speed and wind speed squared); and common controls (commodity prices of 
+coal, gas, and oil). The marginal emissions cost is instrumented with the emissions price. 
+Robust standard errors in parentheses. Number of observations: $ 16,186$.}
+\end{minipage}
+\end{table}

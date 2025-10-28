@@ -1,0 +1,41 @@
+\begin{table}
+\centering
+\caption{Cost Pass-through Regression Results} \label{tab:cost_pt}
+
+\begin{tabular*}{.9\textwidth}{@{\extracolsep{\fill}} l  c  c  c  c  c }
+\hline\hline 
+ & \textbf{(1)}  & \textbf{(2)}  & \textbf{(3)}  & \textbf{(4)}  & \textbf{(5)} \\ \cline{2-6} \\[-\sep]
+Mg. Emissions Costs $(\rho)$  & 0.862 & 0.860 & 0.835 & 0.829 & 0.848 \\ 
+ & (0.181) & (0.182) & (0.173) & (0.172) & (0.168) \\[\sep] \hline \\[-\sep]
+Temperature  & -0.231 & & -0.204 & & \\ 
+ & (0.060) & & (0.057) & & \\[\sep] 
+Maximum Temperature  & 0.137 & & 0.112 & & \\ 
+ & (0.050) & & (0.047) & & \\[\sep] 
+Wind Speed  & -2.086 & -2.171 & -2.089 & -2.191 & -2.238 \\ 
+ & (0.354) & (0.361) & (0.333) & (0.337) & (0.329) \\[\sep] 
+Wind Speed Squared & 0.055 & 0.066 & 0.054 & 0.067 & 0.068 \\ 
+ & (0.025) & (0.025) & (0.023) & (0.023) & (0.023) \\[\sep] 
+Coal  & 57.477 & 45.548 & 57.496 & 45.469 \\ 
+ & (4.035) & (4.364) & (3.885) & (4.164) \\[\sep] 
+Gas  & 5.638 & 3.589 & 5.604 & 3.563 \\ 
+ & (0.407) & (0.405) & (0.391) & (0.387) \\[\sep] 
+Brent  & -2.896 & -1.685 & -2.938 & -1.778 \\ 
+ & (0.881) & (0.985) & (0.834) & (0.930) \\[\sep]\hline\\[-\sep]
+ F-test 
+ & 124.8  & 114.0  & 129.9  & 119.3  & 118.3  \\[\sep]\hline\\[-\sep]
+MonthXTemp,MaxTemp     & N & Y & N & Y & Y  \\
+MonthXHour FE          & N & N & Y & Y & Y  \\
+HourXInput                     & N & N & N & N & Y  \\[\sep]
+\hline\hline 
+\end{tabular*}
+\begin{minipage}[c]{.9\textwidth}
+{\footnotesize 
+\noindent
+Notes: Sample from January 2004 to February 2006, includes all thermal units in the Spanish electricity market. 
+All specifications include month of sample, weekday, and hour fixed effects, as well as weather and demand controls 
+(temperature, maximum temperature, humidity), 
+ supply controls (wind speed and wind speed squared); and common controls (commodity prices of 
+coal, gas, and oil). The marginal emissions cost is instrumented with the emissions price. 
+Robust standard errors in parentheses. Number of observations: $ 16,186$.}
+\end{minipage}
+\end{table}
