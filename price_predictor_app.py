@@ -105,7 +105,7 @@ if predictions_df is not None:
         st.info(f"📍 Selected: **{selected_date.strftime('%A, %B %d, %Y')}** at **{hour_display}**")
     
     # Price prediction results section
-    section_title("💡 Price Prediction Results")
+    section_title("Price Prediction Results")
     
     # Get the prediction for selected date and hour
     mask = (predictions_df['date'] == selected_date) & (predictions_df['hour'] == selected_hour)
@@ -280,7 +280,7 @@ if predictions_df is not None:
     # =============================================================================
     # DAILY PROFILE CHART
     # =============================================================================
-    section_title("📈 Daily Price Profile")
+    section_title("Daily Price Profile")
     
     # Get all hours for the selected date
     day_data = predictions_df[predictions_df['date'] == selected_date].copy()
@@ -361,7 +361,7 @@ if predictions_df is not None:
     # =============================================================================
     # BUSINESS VALUE & PASS-THROUGH SECTION
     # =============================================================================
-    section_title("💼 Why Price Prediction Matters for Electricity Generators")
+    section_title("Why Price Prediction Matters for Electricity Generators")
     
     st.markdown("""
     <div style="
