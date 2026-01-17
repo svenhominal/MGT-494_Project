@@ -1,10 +1,39 @@
 import streamlit as st
  
 
+def apply_global_font():
+    """
+    Applique la police Open Sauce One globalement à l'application
+    """
+    st.markdown("""
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+        
+        * {
+            font-family: 'Open Sauce One', sans-serif !important;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Open Sauce One', sans-serif !important;
+        }
+        
+        p, span, div, label, button, input, select, textarea {
+            font-family: 'Open Sauce One', sans-serif !important;
+        }
+        
+        .stMarkdown, .stText, .stTitle {
+            font-family: 'Open Sauce One', sans-serif !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
+
 def header_banner():
     """
     Affiche un bandeau de titre
     """
+    apply_global_font()  # Applique la police globalement
+    
     st.markdown("""
     <style>
         @media (max-width: 768px) {
