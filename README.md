@@ -53,7 +53,7 @@ MGT-494_Project/
 │       ├── event_study_plot.png
 │       └── plot_*_by_col.png
 │
-├── ORIGINAL REPLICATION CODE
+├── ORIGINAL CODE (STATA & MATLAB)
 │   └── Initial code/
 │       ├── stata_code/                   # Stata do-files
 │       │   ├── analysis_passthrough_rf.do
